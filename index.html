@@ -41,29 +41,39 @@
         <li>CSS3</li>
         <li>PHP</li>
       </ul>
-      <h2>My Favourite Picture</h2>
-      <p>
-        I'd like to share with each of you, my very favourite picture! It is of an illustration featuring wind turbines. Very cool, check it out below!
-      </p>
-      <figure>
-        <!-- src is the location of the image. -->
-        <!-- alt is "alternate text" to describe the image. -->
-        <!-- title is a "pop-up" tooltip, for when you hover over the element. -->
-        <img src="img/wind-turbines-illustration.jpg" alt="A blue illustration of wind turbines." title="A blue illustration of wind turbines.">
-        <figcaption>
-          Illustration credited to:
-          <!-- target="_blank" makes the link open in a brand new tab (leaving the original tab open.) -->
-          <a href="https://pixabay.com/users/rdaudt-7418264/" target="_blank" title="Click here to view the original author's profile.">
-            rdaudt
-          </a>
-        </figcaption>
-      </figure>
+      <!-- Article is a semantic structuring element that implies that the inner content is a self-contained article and will 
+      make sense standing on its own. -->
+      <article>
+        <h2>My Favourite Pictures</h2>
+        <p>
+          Below are some of my favourite pictures.
+        </p>
+        <section>
+          <h3>Wind Turbines</h3>
+          <p>
+            I'd like to share with each of you, my very favourite picture! It is of an illustration featuring wind turbines. Very cool, check it out below!
+          </p>
+          <figure>
+            <!-- src is the location of the image. -->
+            <!-- alt is "alternate text" to describe the image. -->
+            <!-- title is a "pop-up" tooltip, for when you hover over the element. -->
+            <img src="img/wind-turbines-illustration.jpg" alt="A blue illustration of wind turbines." title="A blue illustration of wind turbines.">
+            <figcaption>
+              Illustration credited to:
+              <!-- target="_blank" makes the link open in a brand new tab (leaving the original tab open.) -->
+              <a href="https://pixabay.com/users/rdaudt-7418264/" target="_blank" title="Click here to view the original author's profile.">
+                rdaudt
+              </a>
+            </figcaption>
+          </figure>
+        </section>
+      </article>
     </main>
     <footer>
       <h2>Footer</h2>
       <div>
         <p>
-          &copy; Copyright 2020 TECHCareers;
+          &copy; Copyright 2020 <span>TECHCareers</span>;
           All Rights Reserved
         </p>
       </div>
