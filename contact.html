@@ -31,22 +31,51 @@
         </ul>
       </nav>
     </header>
-    <form action="">
+    <!-- 
+      Forms are used for submitting data from a user to the server.
+      The "action" attribute determines which page the data will be sent to.
+      The "method" attribute determines whether the data will be stored in the URL or sent securely.
+        -The "GET" method will store the data in the URL, meaning if the URL is sent to somebody, they will have the
+        same exact page, as their URL will sent the same data to the server as the original request.
+        -The "POST" method will submit the data behind the scenes, so if the URL is copied, none of the data
+        will be included.
+    -->
+    <form action="contact.html" method="POST">
+      <!-- 
+        The label element is used kind of like a prompt for a form element. 
+        The "for" attribute will tie the prompt to a form element by its ID.
+      -->
       <label for="name">Please enter your name:</label>
-      <input id="name" type="text">
+      <!--
+        The input element is used for several types of form fields including:
+          -Basic one line text ("text")
+          -Checkboxes ("checkbox")
+          -Radio buttons ("radio")
+          -Submit button ("submit")
+        The type of element rendered is determined by the "type" attribute.
+        The "id" attribute is used to globally identify an element on a page (for CSS / JS) as well as tie it to a label.
+        The "name" attribute is used to determine what the field's data will be referred to when it is submitted to the server.
+      -->
+      <input id="name" name="name" type="text">
 
+      <!-- The br (break) element is used to create a line break, but it's usually better to do this with CSS once you know how. -->
       <br />
 
-      <label for="email">Please enter your email address:</label>
-      <input id="email" type="text">
+      <!-- Type of "password" is the same as "text" but it will star out the content. This will NOT hide the content in form submissions. -->
+      <label for="password">Please enter your password:</label>
+      <input id="password" name="password" type="password">
 
       <br />
 
       <label for="message">Please leave us a message:</label>
-      <textarea id="message"></textarea>
+      <textarea id="message" name="message"></textarea>
 
       <br />
 
+      <!-- 
+        The submit button will submit the form to the "action" attribute in the form element.
+        The text in the button can be determined by the "value" attribute.
+      -->
       <input type="submit" value="Submit Me!">
     </form>
     <footer>
