@@ -40,7 +40,7 @@
         -The "POST" method will submit the data behind the scenes, so if the URL is copied, none of the data
         will be included.
     -->
-    <form action="contact.html" method="POST">
+    <form action="contact.html" method="GET">
       <!-- 
         The label element is used kind of like a prompt for a form element. 
         The "for" attribute will tie the prompt to a form element by its ID.
@@ -67,6 +67,29 @@
 
       <br />
 
+      <!-- I've labeled this section with a paragraph because there is no singular element to tie a label to. -->
+      <p>Please select your relation:</p>
+      <!--
+        Radio button "groups" are determined by the "name" attribute. You cannot have multiple radio buttons selected within a group.
+        The "value" attribute will determine what data is sent under the "name" when the form is submitted.
+        Without a "value" attribute, it will send the data 'on'.
+        The "id" attribute here functions similarly to above, uniquely identifying one specific element.
+        By marking one radio button as "checked" we ensure that the form cannot be submitted (without HTML editting) with no button selected.
+      -->
+      <input id="coworker" name="relation" value="coworker" type="radio">
+      <label for="coworker">Co-Worker</label>
+      <input id="exstudent" name="relation" value="exstudent" type="radio">
+      <label for="exstudent">Ex-Student</label>
+      <input id="other" name="relation" value="other" type="radio" checked>
+      <label for="other">Other</label>
+
+      <br />
+
+      <!-- 
+        A textarea element is essentially a multi-line 'input type="text"' element.
+        It will add a scrollbar when the content exceeeds its visual size.
+        By default, the text area can be resized by the user. This can be disabled with CSS.
+      -->
       <label for="message">Please leave us a message:</label>
       <textarea id="message" name="message"></textarea>
 
