@@ -29,6 +29,9 @@ footer p {
   display: flex;
   justify-content: flex-end;
 }
+.flex > div > p {
+  margin: 0;
+}
 .magenta {
   background-color: magenta;
   width: 250px;
