@@ -27,25 +27,7 @@ footer p {
 }
 .flex {
   display: flex;
-  justify-content: flex-end;
-}
-.flex > div > p {
-  margin: 0;
-}
-.magenta {
-  background-color: magenta;
-  width: 250px;
-  height: 250px;
-}
-.orange {
-  background-color: orange;
-  width: 400px;
-  height: 300px;
-}
-.lime {
-  background-color: lime;
-  width: 250px;
-  height: 250px;
+  justify-content: space-around;
 }
 /* 
   ID Selectors: Are used to select the single element with the given ID. IDs have higher specificity than class selectors.
@@ -70,4 +52,26 @@ main > p {
 }
 .contact .mask {
   background-color: rgba(50, 50, 50, 0.5);
+}
+/* Demo Equal-Width Two-Column Layout */
+main>section:nth-of-type(1) p {
+  width: 48%;
+}
+/* Demo Staggered-Width Two-Column Layout */
+main>section:nth-of-type(2) p:first-child {
+  width: 23%;
+}
+main>section:nth-of-type(2) p:last-child {
+  width: 73%;
+
+}
+/* Demo Staggered-Width Three-Column Layout */
+main>section:nth-of-type(3) p:first-child {
+  width: 25%; /* 1/4 */
+}
+main>section:nth-of-type(3) p:nth-child(2) {
+  width: 33%; /* 1/3 */
+}
+main>section:nth-of-type(3) p:last-child {
+  width: 35%; /* 1/3 */
 }
