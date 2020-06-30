@@ -2,28 +2,22 @@
   Element Selectors: Selects every element on the page of matching name.
 */
 body {
-  background-color: salmon;
+  background-color: rgb(200, 225, 240);
 }
-header {
-  background-color: red;
-}
-main {
-  background-color: chartreuse;
-}
-footer {
-  background-color: cyan;
+header, main, footer {
+  background-color: rgb(140, 175, 200);
 }
 /* 
   Direct Descendent Selectors: Selects every element on the page of the latter name that is a DIRECT child of the former name.
 */
 body>footer>p {
-  background-color: orange
+  /*background-color: orange*/
 }
 /* 
   Descendent Selectors: Selects every element on the page of the latter name that is a child (somewhere) of the former name.
 */
 footer p {
-  background-color: yellow;
+  /*background-color: yellow;*/
 }
 /* 
   Class Selectors: Are used to select every element on a page with a given class attribute, regardless of element type. Classes have higher specificity than element selectors. 
